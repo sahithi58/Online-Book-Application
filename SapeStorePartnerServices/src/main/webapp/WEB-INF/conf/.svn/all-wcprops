@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/WEB-INF/conf
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/WEB-INF/conf/commons-logging.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/WEB-INF/conf/log4j.properties
+END
+axis2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/WEB-INF/conf/axis2.xml
+END
+axis2.policy
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/WEB-INF/conf/axis2.policy
+END

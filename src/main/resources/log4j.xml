@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!--
+******************************************************************************
+* Log4j Configuration
+*
+* Logging levels (higest to lowest):
+*   off, fatal, error, warn, info, debug, all
+* A logging request is enabled if its level is
+* higher than or equal to the level of its logger.
+******************************************************************************
+-->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <!-- ******************************************************************* -->
+  <!-- ConsoleAppender                                                     -->
+  <!-- ******************************************************************* -->
+  <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+    <param name="Threshold" value="warn"/>
+
+    <layout class="org.apache.log4j.PatternLayout">
+      <!-- Conversion pattern: Message\n -->
+      <param name="ConversionPattern" value="%m%n"/>
+    </layout>
+  </appender>
+   
+  <!-- ******************************************************************* -->
+  <!-- Application specific File Appender                                  -->
+  <!-- ******************************************************************* -->
+   <appender name="ApplicationLogAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="standard-application.log"/>
+        <param name="Append" value="true"/>
+		<param name="DatePattern" value=".yyyy-MM-dd"/>
+		<layout class="org.apache.log4j.PatternLayout">
+  		     <param name="ConversionPattern" 
+                            value="[%d{ISO8601}] %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+		</layout>
+    </appender>	
+    
+  <!-- ******************************************************************* -->
+  <!-- Root Logger                                                         -->
+  <!-- ******************************************************************* -->
+  <!-- Allow warning and higher messages from everyone to go to console    -->
+  <!-- (controlled through threshold value) 							   -->
+  <root>
+    <level value="debug"/>
+    <appender-ref ref="ConsoleAppender"/>
+    <appender-ref ref="ApplicationLogAppender"/>
+  </root>
+
+</log4j:configuration>

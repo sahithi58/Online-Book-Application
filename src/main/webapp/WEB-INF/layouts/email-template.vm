@@ -1,0 +1,65 @@
+
+<html>
+
+<body>
+		<h3>Order Confirmation</h3>
+		<h2>$address.orderId<h2>
+		<h2>
+			SHIPPING ADDRESS:
+		</h2>
+		<p>
+
+			            ${address.customerName}<br>
+                        ${address.addressLine1}<br>
+                        ${address.addressLine2}<br>
+                        ${address.state}<br>
+                        ${address.zipcode}<br>
+					    ${address.mobilenumber}<br>
+		</p>
+		<h2>
+			ORDER SUMMARY
+		</h2>
+		            
+
+     <table>
+  <tr>
+    <th>Serialno</th>
+    <th>        </th>
+    <th>BookName</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Subtotal</th>
+  </tr>
+         
+          
+     #set($a=0)
+       #set($b=1)
+ #foreach ($velocity in $books)
+ 	#set($bookPrice = $velocity.bookPrice)
+	#set($Integer = 0)
+	#set($bookPriceInteger=$Integer.parseInt($bookPrice))
+	#set($subtotal = $velocity.quantity * $bookPriceInteger)
+<tr>
+    <td>#set($a=$a+$b)
+     $a
+    </td>
+    <td><img src=$velocity.thumbPath style="width:100px;height:100px;"></td>
+    <td>$velocity.bookTitle <br>
+   Publisher: $velocity.PublisherName<br>
+    $velocity.bookAuthor
+    
+    </td>
+    <td>$velocity.quantity</td>
+    <td>$velocity.bookPrice</td>
+    <td>$subtotal</td>
+   
+</tr>
+#end
+    </tr>
+</table>            
+ <p>Thanks a lot for shopping .We have received your request.You can check the order.      
+
+
+	</body>
+
+</html>

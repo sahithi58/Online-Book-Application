@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/axis2-web/Error
+END
+GenError.html
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/axis2-web/Error/GenError.html
+END
+error500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/axis2-web/Error/error500.jsp
+END
+AuthError.html
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/axis2-web/Error/AuthError.html
+END
+error404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/sapientjava/!svn/ver/361/trunk/SapeStore/Working%20Copy/Golden%20Copy/trunk/Development/Code/SapeStorePartnerServices/src/main/webapp/axis2-web/Error/error404.jsp
+END

@@ -1,0 +1,13 @@
+/* ==========================================================================
+   styles to override jquery-ui css defaults
+   ========================================================================== */
+
+.ui-widget-header{background: none;border:none;}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr{border-top-right-radius: 0;}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{ border-top-left-radius: 0;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ background: none repeat scroll 0 0 #D4DADB;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{background: none repeat scroll 0 0 #F0F7F8;}
+.ui-tabs .ui-tabs-nav li{margin-right:0;}
+.ui-widget-content{background:none;}
+.ui-tabs .ui-tabs-panel{padding: 0 0.4em;}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{}

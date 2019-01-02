@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SapeStore</display-name>
+  <servlet>
+    <servlet-name>SapeStore</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <context-param>
+    <param-name>log4jExposeWebAppRoot</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <context-param>
+    <param-name>webAppRootKey</param-name>
+    <param-value>FinanceManager.root</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>WEB-INF/SapeStore-servlet.xml</param-value>
+  </context-param>
+  <servlet-mapping>
+    <servlet-name>SapeStore</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+   <error-page>  
+    <error-code>404</error-code> 
+  <!-- <exception-type>java.lang.Exception</exception-type>   -->
+  <location>/error.jsp</location>  
+  </error-page>  
+  
+  <error-page>  
+    <error-code>500</error-code> 
+  <location>/error.jsp</location>  
+  </error-page>  
+ 
+  <error-page>  
+  <exception-type>java.lang.Exception</exception-type>
+  <location>/error.jsp</location>  
+  </error-page>  
+  <filter>
+    <filter-name>RequestLoggingFilter</filter-name> <!-- mandatory -->
+    <filter-class>com.sapestore.filters.RequestLoggingFilter</filter-class> <!-- mandatory -->
+    <init-param> <!-- optional -->
+    <param-name>test</param-name>
+    <param-value>testValue</param-value>
+    </init-param>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>RequestLoggingFilter</filter-name> <!-- mandatory -->
+    <url-pattern>/admin/*</url-pattern> <!-- either url-pattern or servlet-name is mandatory -->
+    <url-pattern>/myorder/*</url-pattern>
+    <url-pattern>/mycart/*</url-pattern>
+    <url-pattern>/myaccount/*</url-pattern>
+    <!-- <servlet-name>/login</servlet-name> -->
+    <!-- <dispatcher>REQUEST</dispatcher> -->
+  </filter-mapping>
+</web-app>

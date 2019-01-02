@@ -1,0 +1,11 @@
+<html>
+<body>
+
+Dear ${register.fullName}<br>
+ 
+Your account has been updated. <br><br>
+
+Regards<br>
+Sape-Store Team
+</boby>
+</html>
